@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
-    "declarity": "0.0.1",
+    "declarity": "^0.1.0",
     "immutable": "^3.8.1",
     "koa": "^2.2.0",
     "koa-router": "^7.1.0",
