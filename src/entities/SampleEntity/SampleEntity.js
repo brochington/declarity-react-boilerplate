@@ -37,7 +37,7 @@ class Box {
     update = () => {}
 }
 
-class SampleEntity {
+class Canvas {
     getChildContext = ({state}) => {
         let {ctx, canvasHeight, canvasWidth} = state
 
