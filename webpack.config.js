@@ -23,7 +23,16 @@ module.exports = {
             test: /\.js$/,
             use: ['babel-loader'],
             include: path.join(__dirname, 'src')
+        }, {
+            test: /\.dsx$/,
+            use: ['babel-loader', 'declarity-loader'],
+            include: path.join(__dirname, 'src/entities')
         }]
+    },
+    resolveLoader: {
+        alias: {
+            'declarity-loader': path.join(__dirname, './loaders/declarity-loader')
+        }
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),

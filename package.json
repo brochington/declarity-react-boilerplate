@@ -4,7 +4,7 @@
   "description": "React + Delcarity boilerplate",
   "main": "index.js",
   "scripts": {
-    "dev": "node --harmony ./server.js",
+    "dev": "NODE_ENV=development node --harmony ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,11 +19,14 @@
   "homepage": "https://github.com/brochington/declarity-react-boilerplate#readme",
   "devDependencies": {
     "babel-core": "^6.24.0",
+    "babel-generator": "^6.24.0",
     "babel-loader": "^6.4.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.23.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
+    "babel-template": "^6.23.0",
     "koa-webpack": "^0.3.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "webpack": "^2.3.0"

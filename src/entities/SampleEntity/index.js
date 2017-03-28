@@ -1,3 +1,3 @@
-import SampleEntity from './SampleEntity'
+import SampleEntity from './SampleEntity.dsx'
 
 export default SampleEntity

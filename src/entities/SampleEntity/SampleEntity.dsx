@@ -1,5 +1,5 @@
-/** @jsx Declarity.createEntity */
 import Declarity from 'declarity'
+import Box from '../Box'
 
 const translate = {
     update: ({context, props}) => {
@@ -31,13 +31,7 @@ const renderBox = {
     }
 }
 
-class Box {
-    create = () => {}
-
-    update = () => {}
-}
-
-class Canvas {
+class SampleEntity {
     getChildContext = ({state}) => {
         let {ctx, canvasHeight, canvasWidth} = state
 
@@ -45,6 +39,7 @@ class Canvas {
     }
 
     create = ({setState}) => {
+        console.log('create')
         const canvas = document.createElement('canvas')
         const ctx = canvas.getContext('2d')
         const canvasHeight = 400
@@ -71,12 +66,12 @@ class Canvas {
 
         ctx.clearRect(0, 0, canvasHeight, canvasWidth)
 
-        return {count: count + 1}
+        return {count: count >= 360 ? 1 : count + 1}
     }
 
     render = ({state}) => {
         const {context, ctx, count} = state;
-        const rotationVal = (count % 360) * (Math.PI / 180)
+        const rotationVal = count * (Math.PI / 180)
 
         return [
             <Box
@@ -85,13 +80,13 @@ class Canvas {
                 position={{x: 30, y: 30}}
                 rotation={rotationVal}
                 scale={{x: 50, y: 50}}
-                color="red"
+                color="aqua"
             />,
             <Box
                 key={'box2'}
                 systems={[translate, rotate, renderBox]}
                 position={{x: 100, y: 100}}
-                rotation={rotationVal}
+                rotation={rotationVal * 4}
                 scale={{x: 50, y: 50}}
                 color="blue"
             />,
@@ -99,7 +94,7 @@ class Canvas {
                 key={'box3'}
                 systems={[translate, rotate, renderBox]}
                 position={{x: 70, y: 120}}
-                rotation={rotationVal}
+                rotation={rotationVal * 3}
                 scale={{x: 30, y: 50}}
                 color="green"
             />

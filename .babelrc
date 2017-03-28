@@ -9,6 +9,7 @@
     "react"
 ],
   "plugins": [
+    "declarity-babel-hot-loader",
     "react-hot-loader/babel",
     ["transform-object-rest-spread", { "useBuiltIns": true }],
     "transform-class-properties",

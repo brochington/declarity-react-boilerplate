@@ -1,0 +1,9 @@
+import Declarity from 'declarity'
+
+class Box {
+    create = () => {}
+
+    update = () => {}
+}
+
+export default Box
