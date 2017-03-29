@@ -39,7 +39,6 @@ class SampleEntity {
     }
 
     create = ({setState}) => {
-        console.log('create')
         const canvas = document.createElement('canvas')
         const ctx = canvas.getContext('2d')
         const canvasHeight = 400
@@ -75,20 +74,20 @@ class SampleEntity {
 
         return [
             <Box
-                key={'box1'}
-                systems={[translate, rotate, renderBox]}
-                position={{x: 30, y: 30}}
-                rotation={rotationVal}
-                scale={{x: 50, y: 50}}
-                color="aqua"
-            />,
-            <Box
                 key={'box2'}
                 systems={[translate, rotate, renderBox]}
                 position={{x: 100, y: 100}}
                 rotation={rotationVal * 4}
                 scale={{x: 50, y: 50}}
                 color="blue"
+            />,
+            <Box
+                key={'box1'}
+                systems={[translate, rotate, renderBox]}
+                position={{x: 80, y: 40}}
+                rotation={rotationVal}
+                scale={{x: 50, y: 90}}
+                color="aqua"
             />,
             <Box
                 key={'box3'}

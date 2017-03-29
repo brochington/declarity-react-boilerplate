@@ -27,6 +27,7 @@
     "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
     "babel-template": "^6.23.0",
+    "declarity-loader": "0.0.1",
     "koa-webpack": "^0.3.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "webpack": "^2.3.0"
