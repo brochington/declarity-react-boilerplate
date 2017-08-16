@@ -73,15 +73,15 @@ class SampleEntity {
         const rotationVal = count * (Math.PI / 180)
 
         return [
-            <Box
+            <entity
                 key={'box2'}
                 systems={[translate, rotate, renderBox]}
                 position={{x: 100, y: 100}}
                 rotation={rotationVal * 4}
                 scale={{x: 50, y: 50}}
-                color="blue"
+                color="orange"
             />,
-            <Box
+            <entity
                 key={'box1'}
                 systems={[translate, rotate, renderBox]}
                 position={{x: 80, y: 40}}
@@ -89,7 +89,7 @@ class SampleEntity {
                 scale={{x: 50, y: 90}}
                 color="aqua"
             />,
-            <Box
+            <entity
                 key={'box3'}
                 systems={[translate, rotate, renderBox]}
                 position={{x: 70, y: 120}}

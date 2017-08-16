@@ -20,21 +20,21 @@
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-generator": "^6.24.0",
-    "babel-loader": "^6.4.1",
+    "babel-loader": "^7.1.1",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.23.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
     "babel-template": "^6.23.0",
-    "declarity-loader": "0.0.1",
-    "koa-webpack": "^0.3.1",
+    "declarity-loader": "0.0.3",
+    "koa-webpack": "^1.0.0",
     "react-hot-loader": "^3.0.0-beta.6",
-    "webpack": "^2.3.0"
+    "webpack": "^3.5.4"
   },
   "dependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
-    "declarity": "^0.1.0",
+    "declarity": "^0.2.4",
     "immutable": "^3.8.1",
     "koa": "^2.2.0",
     "koa-router": "^7.1.0",

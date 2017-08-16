@@ -29,11 +29,6 @@ module.exports = {
             include: path.join(__dirname, 'src/entities')
         }]
     },
-    resolveLoader: {
-        alias: {
-            'declarity-loader': path.join(__dirname, './loaders/declarity-loader')
-        }
-    },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
